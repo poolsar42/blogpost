@@ -18,11 +18,12 @@ const Post = ({
         boxShadow: "0 0 10px 2.5px rgb(0 0 0 / 0.2)",
         padding: "15px",
         marginBottom: "20px",
+        overflow: "hidden",
       }}
     >
       <div
         className="blog-p-card__content u-no-margin l-site"
-        style={{ border: 0, minHeight: "100%", overflow: "hidden" }}
+        style={{ border: 0, minHeight: "100%" }}
       >
         <p className="u-no-margin u-no-padding">{category}</p>
         <hr
