@@ -8,6 +8,8 @@ function Blog() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     (async () => {
+      // simple fetch, don't want to use axios or other libraries
+      // to not overload the project
       const response = await fetch(DATA_API_URL);
       const data = await response.json();
       setPosts(data);
@@ -16,7 +18,6 @@ function Blog() {
 
   return (
     <div
-      className=""
       style={{
         marginTop: "20px",
       }}
@@ -42,6 +43,7 @@ function Blog() {
                 "Article"
               }
               category={
+                // In the returen API object I didn't find a better way to get the category
                 post._embedded["wp:term"][2].length
                   ? post._embedded["wp:term"][2][0].name.toUpperCase()
                   : post._embedded["wp:term"][1][0].name.toUpperCase()

@@ -15,7 +15,7 @@ const Post = ({
         border: 0,
         borderTop: "3px solid #77216F",
         borderRadius: "0.2rem",
-        boxShadow: "0 0 10px 2px rgb(0 0 0 / 0.25)",
+        boxShadow: "0 0 10px 2.5px rgb(0 0 0 / 0.2)",
         padding: "15px",
         marginBottom: "20px",
       }}
@@ -31,6 +31,7 @@ const Post = ({
             backgroundColor: "#fff",
             marginTop: "15px",
             marginBottom: "15px",
+            // to see the line on the left and right
             width: "105%",
             left: "-2.5%",
           }}
