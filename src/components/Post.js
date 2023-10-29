@@ -44,6 +44,9 @@ const Post = ({
             height="185"
             width="330"
             src={media}
+            style={{
+              borderRadius: "0.1rem",
+            }}
           />
         </a>
 
