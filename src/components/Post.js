@@ -28,7 +28,7 @@ const Post = ({
         <p className="u-no-margin u-no-padding">{category}</p>
         <hr
           style={{
-            borderTop: "1px dotted",
+            borderTop: "1px dotted rgb(209 213 219)",
             backgroundColor: "#fff",
             marginTop: "15px",
             marginBottom: "15px",
@@ -62,7 +62,7 @@ const Post = ({
           </p>
           <hr
             style={{
-              borderTop: "1px dotted",
+              borderTop: "1px dotted rgb(209 213 219)",
               backgroundColor: "#fff",
               marginTop: "15px",
               marginBottom: "15px",
